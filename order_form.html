@@ -1,0 +1,170 @@
+<!-- Pizza Order Form -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order</title>
+    <!-- Meta Tags -->
+    
+    <!-- The charset meta tag specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+
+    <!-- The description and keywords meta tags provide information about the webpage for search engines -->
+    <meta name="description" content="Place your pizza order">
+    <meta name="keywords" content="Pizza, Order, Delivery">
+
+    <!-- The viewport meta tag makes your webpage look good on all devices (responsive web design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+
+form {
+  width: 300px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+
+form h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+
+form input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+main div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  width: 30%;
+  text-align: center;
+}
+</style>
+    <h1>Pizza Order Form</h1>
+    <!-- The form tag defines an HTML form for user input -->
+    <form action="process_order.html" method="post">
+
+        <!-- Customer Name -->
+        <!-- The label tag defines a label for many form elements -->
+        <label for="name">Name:</label><br>
+
+        <!-- The input tag specifies an input field where the user can enter data -->
+        <input type="text" id="name" name="name"><br><br>
+        
+        <!-- Customer Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <!-- Customer Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+        
+        <!-- Pizza Type -->
+        <label for="type">Pizza Type:</label><br>
+
+        <!-- The select tag is used to create a drop-down list -->
+        <select id="type" name="type">
+            <option value="margherita">Pepperoni and Cheese</option>
+            <option value="pepperoni">Cheese pizza</option>
+            <option value="bbqChicken">Meat Lovers</option>
+        </select><br><br>
+        
+        <!-- Pizza Size -->
+        <label for="size">Pizza Size:</label><br>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+        
+        <!-- Toppings -->
+        <label for="toppings">Toppings:</label><br>
+
+        <!-- The checkbox is a square box that is ticked (checked) when activated -->
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        <input type="checkbox" id="olives" name="toppings" value="olives">
+        <label for="olives">Olives</label><br><br>
+
+      <!-- Pizza Options -->
+<main style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <!-- Pizza 1 -->
+  <div style="border: 1px solid black; padding: 10px; margin: 10px; text-align: center;">
+      <h2>Pepperoni and Cheese</h2>
+      <p>A classic combination of tomato sauce, cheese, and pepperoni</p>
+  </div>
+
+  <!-- Pizza 2 -->
+  <div style="border: 1px solid black; padding: 10px; margin: 10px; text-align: center;">
+      <h2>Cheese Pizza</h2>
+      <p>A blend of two or more cheeses, such as low-moisture Mozzarella or Provolone.</p>
+  </div>
+
+  <!-- Pizza 3 -->
+  <div style="border: 1px solid black; padding: 10px; margin: 10px; text-align: center;">
+      <h2>Meat Lovers</h2>
+      <p>Pepperoni, Italian sausage, ham, bacon, seasoned pork & beef.</p>
+  </div>
+</main>
+
+    <!-- Submit Button -->
+    <!-- The submit button is used to send form data to a server -->
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>

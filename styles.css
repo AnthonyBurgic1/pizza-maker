@@ -1,0 +1,134 @@
+.flex-container {
+    display: flex;
+    background-color: red;
+
+/* Distribute cards evenly */
+
+    justify-content: space-around;  
+
+/* Allow cards to wrap to next line */
+
+    flex-wrap: wrap; 
+}
+
+/* Pizza card */
+
+.card {
+
+    /* Card border */
+    border: 1px solid #333;  
+
+    /* Card width */
+    width: 200px;  
+
+    /* Space around card */
+    margin: 10px;  
+
+    /* Space inside card */
+    padding: 10px;  
+
+    /* Center card content */
+    text-align: center;  
+}
+
+/* Pizza image */
+.card img {
+
+    /* Make image fill card width */
+    width: 100%;  
+
+    /* Maintain image aspect ratio */
+    height: auto;  
+}
+
+
+.flex-item {
+background-color: tomato;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+
+.logo img {
+width: 90px;
+height: 100px;
+}
+
+.header {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+background-color: gainsboro;
+
+padding: 20px;
+
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.nav-menu {
+
+    display: flex;
+
+    gap: 20px;
+}
+body {
+font-family: Arial, sans-serif; 
+
+}
+
+ /* Flex container */
+.flex-container {
+
+    display: flex;
+    display: flex;
+
+    /* Distribute cards evenly */
+    justify-content: space-around;
+
+    /* Allow cards to wrap to next line */
+    flex-wrap: wrap;  
+}
+
+    /* Pizza image */
+.card img {
+
+    /* Make image fill card width */
+    width: 100%;  
+
+    /* Maintain image aspect ratio */
+    height: auto;  
+}
+
+    /* Order button */
+.order-button {
+
+    /* Button color */
+    background-color: DodgerBlue;  
+
+    /* Button text color */
+    color: white;  
+
+    /* Button padding */
+    padding: 10px 20px;  
+
+    /* Remove underline from link */
+    text-decoration: none;  
+
+    /* Needed to add padding */
+    display: inline-block; 
+
+    /* Space above and below button */
+    margin: 20px 0;  
+}
